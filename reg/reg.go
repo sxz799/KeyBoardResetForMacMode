@@ -41,7 +41,7 @@ func ShowCurrentConfig() {
 			if bytes.Equal(key1, key2) {
 				continue
 			}
-			fmt.Println("    ", keyMap.QueryKeyByBinary(key1).Name, "  ->  ", keyMap.QueryKeyByBinary(key2).Name)
+			fmt.Printf("  %-8s  修改为  %-8s\n", keyMap.QueryKeyByBinary(key1).Name, keyMap.QueryKeyByBinary(key2).Name)
 		}
 		fmt.Println("===================================")
 		fmt.Println()
