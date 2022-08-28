@@ -48,12 +48,8 @@ func ShowCurrentConfig() {
 	}
 }
 func DelConfig() bool {
-	err2 := Key.DeleteValue("Scancode Map")
-	if err2 != nil {
-		fmt.Println(err2)
-		fmt.Println("没找到相应键值")
-	}
-	return err2 == nil
+	Key.DeleteValue("Scancode Map")
+	return true
 }
 func UseConfig(config []byte) bool {
 	err2 := Key.SetBinaryValue("Scancode Map", config)

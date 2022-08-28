@@ -33,37 +33,37 @@ func QueryKeyById(id int) KeyMap {
 func InitKeyArray() {
 	KeyArray = append(KeyArray, KeyMap{
 		Id:     1,
-		Name:   "L Ctrl",
+		Name:   "左侧 Ctrl",
 		Binary: []byte{29, 0},
 	})
 	KeyArray = append(KeyArray, KeyMap{
 		Id:     2,
-		Name:   "L Win",
+		Name:   "左侧 Win",
 		Binary: []byte{91, 224},
 	})
 	KeyArray = append(KeyArray, KeyMap{
 		Id:     3,
-		Name:   "L Alt",
+		Name:   "左侧 Alt",
 		Binary: []byte{56, 0},
 	})
 	KeyArray = append(KeyArray, KeyMap{
 		Id:     4,
-		Name:   "R Alt",
+		Name:   "右侧 Alt",
 		Binary: []byte{56, 224},
 	})
 	KeyArray = append(KeyArray, KeyMap{
 		Id:     5,
-		Name:   "R Win",
+		Name:   "右侧 Win",
 		Binary: []byte{92, 224},
 	})
 	KeyArray = append(KeyArray, KeyMap{
 		Id:     6,
-		Name:   "R Ctrl",
+		Name:   "右侧 Ctrl",
 		Binary: []byte{29, 224},
 	})
 	KeyArray = append(KeyArray, KeyMap{
 		Id:     7,
-		Name:   "R Menu",
+		Name:   "右侧 Menu",
 		Binary: []byte{93, 224},
 	})
 

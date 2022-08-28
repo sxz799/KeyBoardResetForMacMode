@@ -19,8 +19,8 @@ func createConfig() map[int]int {
 	fmt.Println("==============================")
 	fmt.Println()
 	newConfig := make(map[int]int)
-	fmt.Println("请输入你想要设置的按键，先输入原始键位的编码,输入空格，再输入目标键位的编码，回车结束")
-	fmt.Println("输入0表示设置完成")
+	fmt.Println("请输入你想要设置的按键，先输入原始键位的编码，输入空格，再输入目标键位的编码，回车确认，输入0表示设置完成")
+	fmt.Println("")
 	for {
 		var a, b string
 		fmt.Scan(&a)
