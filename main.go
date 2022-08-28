@@ -48,7 +48,7 @@ func createConfig() map[int]int {
 }
 
 func main() {
-
+	defer reg.Key.Close()
 	keyMap.InitKeyArray()
 	reg.ShowCurrentConfig()
 	var ok bool
