@@ -61,5 +61,10 @@ func InitKeyArray() {
 		Name:   "R Ctrl",
 		Binary: []byte{29, 224},
 	})
+	KeyArray = append(KeyArray, KeyMap{
+		Id:     7,
+		Name:   "R Menu",
+		Binary: []byte{93, 224},
+	})
 
 }
