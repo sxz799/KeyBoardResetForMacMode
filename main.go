@@ -30,7 +30,7 @@ func createConfig() map[int]int {
 		fmt.Scan(&b)
 		num1, err1 := strconv.Atoi(a)
 		num2, err2 := strconv.Atoi(b)
-		if err1 != nil || err2 != nil || num1 > 6 || num2 > 6 {
+		if err1 != nil || err2 != nil || num1 > len(keyMap.KeyArray) || num2 > len(keyMap.KeyArray) {
 			fmt.Println("输入有误，请重新输入！")
 			continue
 		}
@@ -84,7 +84,7 @@ func main() {
 
 	}
 	if ok {
-		fmt.Println("修改完毕,注销用户重新登录或重启电脑后生效,程序将5秒后退出！")
+		fmt.Println("修改完毕,注销用户重新登录或重启电脑后生效,程序将在5秒后退出！")
 	} else {
 		fmt.Println("修改失败，请以管理员身份运行此程序！")
 	}
