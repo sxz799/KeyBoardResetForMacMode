@@ -1,4 +1,4 @@
-module goTest/v2
+module KeyBoardResetForMac
 
 go 1.18
 
